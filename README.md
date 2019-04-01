@@ -132,3 +132,14 @@ module.exports = {
 ```yarn run build ``` 打包  
 ```yarn run start ``` 启动热更新
 
+### 9.配置eslint
+安装eslint，eslint-plugin-react（eslint不识别jsx语法，需要eslint-react-plugin支持）
+```
+yarn add eslint eslint-plugin-react --dev
+```
+生成.eslintrc.js配置文件
+```
+./node_modules/.bin/eslint --init
+```
+在开发编辑器中安装eslint插件，使用vscode编辑器请安装eslint插件  
+
