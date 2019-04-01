@@ -13,11 +13,20 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|jsx)?$/,
+                test: /\.(js|jsx)$/,
                 use: {
                     loader: 'babel-loader'
                 },
-                exclude: /node_modules/
+                exclude: /node_modules/,
+                include: path.resolve(__dirname, './src/')
+            },
+            {
+                test: /\.(sass|scss)$/,
+                use: {
+                    loader: 'babel-loader'
+                },
+                exclude: /node_modules/,
+                include: path.resolve(__dirname, './src/')
             }
         ]
     },
