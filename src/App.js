@@ -1,5 +1,5 @@
 import React from 'react';
-
+import style from './app.scss';
 
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
     render() {
         console.log(this.state.list);
         return (
-            <div>
+            <div className={style.box}>
                 list列表
                 {this.state.list.map((item, index) => {
                     return (
