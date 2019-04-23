@@ -143,3 +143,18 @@ yarn add eslint eslint-plugin-react --dev
 ```
 在开发编辑器中安装eslint插件，使用vscode编辑器请安装eslint插件  
 
+### 引入sass,css module
+```yarn add sass-loader node-sass css-loader style-loader --dev``` 安装loader sass-loader依赖node-sass，所以需要安装node-sass   
+配置Loader
+
+### 分离css和js
+```yarn add mini-css-extract-plugin --dev``` 安装分离css文件的插件,webpack4+废弃了extract-text-webpack-plugin，改用mini-css-extract-plugin，需要注意该插件不可和style.loader共用   
+
+```yarn add optimize-css-assets-webpack-plugin --dev``` 安装压缩css的插件
+```yarn add uglifyjs-webpack-plugin --dev ``` 安装压缩js的插件
+
+
+
+
+
+
